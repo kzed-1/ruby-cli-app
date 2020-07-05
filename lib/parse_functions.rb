@@ -98,7 +98,7 @@ module Parse
 
         gender = Set.new(["female", "male"]) 
         colors = Set.new(["red", "green", "navy", "white", "black"])  
-        sizes = Set.new(["x-small", "small", "medium", "large","x-large"])
+        sizes = Set.new(["x-small", "small", "medium", "large","extra-large"])
 
         if option_value.length == 0
 
