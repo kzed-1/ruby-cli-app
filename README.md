@@ -45,8 +45,8 @@ Style: matte
     * In your terminal cd into the lib folder 
     * run ./cli.rb <product_type> on the terminal
     * example:
-        * ./cli tshirt 
-        * this will output:
+        * $ ./cli tshirt 
+        * this will output:  
         Gender: male, female  
         Color: red, blue, green  
         Size: small, medium, large, extra-large, 2x-large  
