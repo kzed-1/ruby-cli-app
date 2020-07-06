@@ -72,8 +72,7 @@ to run the tests:
 * example:  
     * $ bundle exec rspec t_shirt_spec.rb
     * outputs:  
-    ......
-
+    ......  
     Finished in 0.00725 seconds (files took 0.13828 seconds to load)
     6 examples, 0 failures
 
