@@ -15,7 +15,7 @@ Specification
 * A product list products.json is included; your app should load it or otherwise be able to handle a new product list (with the same specification) being swapped in.
 * For the sake of simplicity, you can assume options will always be in the order specified in products.json.
 
-## Example Input/Output
+### Example Input/Output
 Example: Product type only.
 
 > ./my_program tshirt
