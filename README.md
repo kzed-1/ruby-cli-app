@@ -5,7 +5,7 @@
 2. Instructions on running the program
 3. Instructions on running the tests locally
 
-# Introduction
+## Introduction
 
 Given a JSON file of product data, write a program that takes in a product type and zero or more product options, and returns the remaining product option categories with the available options.
 
@@ -15,7 +15,7 @@ Specification
 * A product list products.json is included; your app should load it or otherwise be able to handle a new product list (with the same specification) being swapped in.
 * For the sake of simplicity, you can assume options will always be in the order specified in products.json.
 
-# Example Input/Output
+## Example Input/Output
 Example: Product type only.
 
 > ./my_program tshirt
