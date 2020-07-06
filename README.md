@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. Introduction 
-2. Librarys used
+2. Libraries used
 3. Instructions on running the program
 4. Instructions on running the tests locally
 
@@ -41,7 +41,7 @@ Example: Options for Small Sticker (no Size Option when 'small' is given)
 > ./my_program sticker small  
 Style: matte
 
-## Librarys Used
+## Libraries Used
 this program uses the RSpec gem for testing
 this file comes with a gemfile with rspec listed in it, make sure to bundle install to get RSpec in order to run tests 
 
