@@ -36,3 +36,14 @@ Example: Options for Small Sticker (no Size Option when 'small' is given)
 
 > ./my_program sticker small
 Style: matte
+
+## Instructions on running the program
+
+* make sure to have ruby installed in your setup 
+*  If you don't here is a link with instructions to get ruby:
+
+<p align="center">
+    <a href = "https://www.ruby-lang.org/en/documentation/installation/">get Ruby</a>
+</p>
+
+
