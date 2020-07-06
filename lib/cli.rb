@@ -7,13 +7,10 @@ require_relative './parse_functions.rb'
 
 require 'json'
 
-# json_data_from_file = File.read("products.json")
-# json_data_from_file = File.read("../lib/products.json")
 
 path = File.expand_path("/Users/kenzhao/Desktop/my-first-cli/lib/products.json")
 json_data = JSON.parse(File.read(path))
 
-# json_data = JSON.parse(json_data_from_file)
 
 class CliOutput
 
@@ -61,6 +58,5 @@ test = CliOutput.new
 
 test.output(json_data, ARGV)
 
-# Parse.parse_sticker(json_data, "small")
 
 

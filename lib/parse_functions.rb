@@ -140,9 +140,7 @@ module Parse
 
                 if product["product_type"] == 'tshirt' && product["options"]["gender"] == option_value[0] && product["options"]["color"] == option_value[1]
                     ts = T_shirt.new(product["id"], product["product_type"], product["options"])
-                    # ts.add_options("color")
                     ts.add_options("size")
-                    # ts.add_color
                     ts.add_size
                 end
             end
@@ -157,11 +155,6 @@ module Parse
 
                 if ( product["product_type"] == 'tshirt' && (product["options"]["gender"] == option_value[0]) && (product["options"]["color"] == option_value[1]) && (product["options"]["size"] == option_value[2]) )
                     ts = T_shirt.new(product["id"], product["product_type"], product["options"])
-                    # ts.add_options("color")
-                    # ts.add_options("size")
-                    # ts.add_color
-                    # ts.add_size
-
                     result.push(ts)
                 end
             end
