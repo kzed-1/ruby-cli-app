@@ -42,7 +42,14 @@ Style: matte
 * Make sure to have ruby installed in your setup 
 *  If you don't here is a link with instructions to get ruby: <a href = "https://www.ruby-lang.org/en/documentation/installation/">get Ruby</a>
 * Once you have cloned the git folder:
-    * In your terminal cd into the lib folder and run ./cli.rb '<product_type>' on the terminal
+    * In your terminal cd into the lib folder 
+    * run ./cli.rb <product_type> on the terminal
+    * example:
+        * ./cli tshirt 
+        * this will output:
+        Gender: male, female
+        Color: red, blue, green
+        Size: small, medium, large, extra-large, 2x-large
 
 
 
