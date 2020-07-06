@@ -44,15 +44,15 @@ This program runs on ther terminal, my setup is on mac os
 *  If you don't here is a link with instructions to get ruby: <a href = "https://www.ruby-lang.org/en/documentation/installation/">get Ruby</a>
 * Once you have cloned the git folder:
     * In your terminal cd into the lib folder 
-    * run ./cli.rb <product_type> on the terminal
+    * run ./cli.rb <product_type> [option1 option2 option3] on the terminal
     * example without options:
-        * $ ./cli tshirt 
+        * $ ./cli.rb tshirt 
         * this will output:  
         Gender: male, female  
         Color: red, blue, green  
         Size: small, medium, large, extra-large, 2x-large  
     * example with option, gender:
-        * $ ./cli tshirt female
+        * $ ./cli.rb tshirt female
         * this will output:  
         Color: red, blue, green  
         Size: small, medium, large, extra-large, 2x-large  
