@@ -20,20 +20,23 @@ Specification
 Example: Product type only.
 
 > ./my_program tshirt  
-Gender: male, female
-Color: red, blue, green
-Size: small, medium, large, extra-large, 2x-large
+Gender: male, female  
+Color: red, blue, green  
+Size: small, medium, large, extra-large, 2x-large  
+
 Example: No Gender Option when 'female' is given
 
 > ./my_program tshirt female  
-Color: red, blue, green
-Size: small, medium, large, extra-large, 2x-large
+Color: red, blue, green  
+Size: small, medium, large, extra-large, 2x-large  
+
 Example: Options for Sticker
 
 > ./my_program sticker  
-Size: x-small, small, medium, large, x-large
-Style: matte, glossy
-Example: Options for Small Sticker (no Size Option when 'small' is given)
+Size: x-small, small, medium, large, x-large  
+Style: matte, glossy  
+
+Example: Options for Small Sticker (no Size Option when 'small' is given)  
 
 > ./my_program sticker small  
 Style: matte
