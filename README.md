@@ -46,7 +46,7 @@ this program uses the RSpec gem for testing
 this file comes with a gemfile with rspec listed in it, make sure to bundle install to get RSpec in order to run tests 
 
 ## Instructions on running the program
-This program runs on terminal, my setup is on mac os
+This program runs on the terminal, my setup is on mac os
 
 * Make sure to have ruby installed in your setup 
 *  If you don't here is a link with instructions to get ruby: <a href = "https://www.ruby-lang.org/en/documentation/installation/">Ruby</a>
