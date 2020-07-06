@@ -49,7 +49,7 @@ this file comes with a gemfile with rspec listed in it, make sure to bundle inst
 This program runs on ther terminal, my setup is on mac os
 
 * Make sure to have ruby installed in your setup 
-*  If you don't here is a link with instructions to get ruby: <a href = "https://www.ruby-lang.org/en/documentation/installation/">get Ruby</a>
+*  If you don't here is a link with instructions to get ruby: <a href = "https://www.ruby-lang.org/en/documentation/installation/">Ruby</a>
 * Once you have cloned the git folder:
     * In your terminal cd into the lib folder 
     * run ./cli.rb <product_type> [option1 option2 option3] on the terminal
