@@ -41,10 +41,8 @@ Style: matte
 
 * make sure to have ruby installed in your setup 
 *  If you don't here is a link with instructions to get ruby: <a href = "https://www.ruby-lang.org/en/documentation/installation/">get Ruby</a>
+* once you have cloned the git folder:
+    * In your terminal cd into the lib folder and run ./cli.rb on the terminal
 
-
-<p align="left">
-    <a href = "https://www.ruby-lang.org/en/documentation/installation/">get Ruby</a>
-</p>
 
 
