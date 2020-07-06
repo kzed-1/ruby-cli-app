@@ -40,7 +40,8 @@ Style: matte
 ## Instructions on running the program
 
 * make sure to have ruby installed in your setup 
-*  If you don't here is a link with instructions to get ruby:
+*  If you don't here is a link with instructions to get ruby: <a href = "https://www.ruby-lang.org/en/documentation/installation/">get Ruby</a>
+
 
 <p align="left">
     <a href = "https://www.ruby-lang.org/en/documentation/installation/">get Ruby</a>
