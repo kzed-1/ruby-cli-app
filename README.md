@@ -2,8 +2,9 @@
 
 ## Table of Contents
 1. Introduction 
-2. Instructions on running the program
-3. Instructions on running the tests locally
+2. Librarys used
+3. Instructions on running the program
+4. Instructions on running the tests locally
 
 ## Introduction
 
@@ -37,6 +38,10 @@ Example: Options for Small Sticker (no Size Option when 'small' is given)
 > ./my_program sticker small
 Style: matte
 
+## Librarys Used
+this program uses the RSpec gem for testing
+this file comes with a gemfile with rspec listed in it, make sure to bundle install to get RSpec in order to run tests 
+
 ## Instructions on running the program
 This program runs on ther terminal, my setup is on mac os
 
@@ -56,6 +61,22 @@ This program runs on ther terminal, my setup is on mac os
         * this will output:  
         Color: red, blue, green  
         Size: small, medium, large, extra-large, 2x-large  
+
+## Instructions on running the tests
+The test uses RSpec, make sure to bundle install before running the tests
+
+to run the tests:
+* cd to the spec folder 
+* run "bundle exec rspec <test file name>.rb"
+* Here is an exmple to run the tshirt class test:
+* example:  
+    * $ bundle exec rspec t_shirt_spec.rb
+    * outputs:  
+    ......
+
+    Finished in 0.00725 seconds (files took 0.13828 seconds to load)
+    6 examples, 0 failures
+
 
 
 
