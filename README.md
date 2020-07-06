@@ -47,9 +47,9 @@ Style: matte
     * example:
         * ./cli tshirt 
         * this will output:
-        Gender: male, female \n
-        Color: red, blue, green \n
-        Size: small, medium, large, extra-large, 2x-large
+        Gender: male, female  
+        Color: red, blue, green  
+        Size: small, medium, large, extra-large, 2x-large  
 
 
 
