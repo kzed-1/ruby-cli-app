@@ -51,8 +51,25 @@ describe Product do
         before(:each) { tshirt.add_options("gender") }
 
         it 'returns the availble_options class attribute hash' do 
-            temp = Product.availible_options
+            # temp = Product.availible_options
             expect(Product.availible_options).to eq({ 'gender' => Set.new([])})
+        end
+    end
+
+    describe '.clear_options' do
+        before(:each) { tshirt.add_options("gender") }
+
+        context 'availible_options before clearing' do 
+            it 'returns the availble_options class attribute hash with gender as a key' do 
+                expect(Product.availible_options).to eq({ 'gender' => Set.new([])})
+            end
+        end
+
+        context 'availible_options after clearing' do 
+            it 'returns the availble_options hash that is empty' do 
+                Product.clear_options
+                expect(Product.availible_options).to eq({})
+            end
         end
 
     end

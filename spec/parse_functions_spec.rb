@@ -22,9 +22,10 @@ describe Parse do
 
         context 'with option size: small' do 
             it 'outputs style to terminal console' do
+                Product.clear_options
                 expect do 
                     Parse.parse_sticker(data, "small")
-                end.to output("Style: matte").to_stdout
+                end.to output("Style: matte\n").to_stdout
             end
         end
         
@@ -36,7 +37,7 @@ describe Parse do
             it 'outputs size and style to terminal console' do
                 expect do 
                     Parse.parse_mugs(data)
-                end.to output("Options: coffee-mug, travel-mug\n").to_stdout
+                end.to output("Type: coffee-mug, travel-mug\n").to_stdout
             end
         end
         
@@ -46,25 +47,28 @@ describe Parse do
 
         context 'without options' do 
             it 'outputs gender, color and sizes to terminal console' do
+                Product.clear_options
                 expect do 
                     Parse.parse_shirts(data)
-                end.to output("Gender: male, female\nColor: red, green, navy, white, black\nSize: x-small, small, medium, large, x-large, extra-large, 2x-large\n").to_stdout
+                end.to output("Gender: male, female\nColor: red, green, navy, white, black\nSize: small, medium, large, extra-large, 2x-large\n").to_stdout
             end
         end
 
         context 'with option gender: female' do 
             it 'outputs colors, and sizes to terminal console' do
+                Product.clear_options
                 expect do 
                     Parse.parse_shirts(data, "female")
-                end.to output("Color: red, green, navy, white, black\nSize: x-small, small, medium, large, x-large, extra-large, 2x-large\n").to_stdout
+                end.to output("Color: red, green, navy, white, black\nSize: small, medium, large, extra-large, 2x-large\n").to_stdout
             end
         end
 
         context 'with option any gender: female and color: red' do 
             it 'outputs sizes to terminal console' do
+                Product.clear_options
                 expect do 
                     Parse.parse_shirts(data, "female", "red")
-                end.to output("Size: x-small, small, medium, large, x-large, extra-large, 2x-large\n").to_stdout
+                end.to output("Size: small, medium, large, extra-large, 2x-large\n").to_stdout
             end
         end
         

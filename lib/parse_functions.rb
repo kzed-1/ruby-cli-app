@@ -71,7 +71,7 @@ module Parse
                 end
             end
 
-            puts "Options: #{Product.availible_options["type"].to_a.join(", ")}"
+            puts "Type: #{Product.availible_options["type"].to_a.join(", ")}"
 
         elsif (styles.include?(option_value))
             

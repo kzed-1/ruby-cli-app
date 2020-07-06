@@ -7,35 +7,44 @@ require_relative './parse_functions.rb'
 
 require 'json'
 
-json_data_from_file = File.read("products.json")
-json_data = JSON.parse(json_data_from_file)
+# json_data_from_file = File.read("products.json")
+# json_data_from_file = File.read("../lib/products.json")
 
-class Output
+path = File.expand_path("/Users/kenzhao/Desktop/my-first-cli/lib/products.json")
+json_data = JSON.parse(File.read(path))
+
+# json_data = JSON.parse(json_data_from_file)
+
+class CliOutput
 
     include Parse
 
-    def output(data)
+    def initialize
+        super
+    end
 
-        if ARGV[0] == "tshirt"
+    def output(data, argv_array)
 
-            if ARGV.length > 1 
-                Parse.parse_shirts(data, *ARGV[1..-1])
+        if argv_array[0] == "tshirt"
+
+            if argv_array.length > 1 
+                Parse.parse_shirts(data, *argv_array[1..-1])
             else
                 Parse.parse_shirts(data)
             end
 
-        elsif ARGV[0] == "sticker"
+        elsif argv_array[0] == "sticker"
 
-            if ARGV.length > 1 
-                Parse.parse_sticker(data, *ARGV[1..-1])
+            if argv_array.length > 1 
+                Parse.parse_sticker(data, *argv_array[1..-1])
             else
                 Parse.parse_sticker(data)
             end
 
-        elsif ARGV[0] == "mug"
+        elsif argv_array[0] == "mug"
 
-            if ARGV.length > 1 
-                Parse.parse_mugs(data, ARGV[1])
+            if argv_array.length > 1 
+                Parse.parse_mugs(data, argv_array[1])
             else
                 Parse.parse_mugs(data)
             end
@@ -48,9 +57,9 @@ class Output
 
 end
 
-test = Output.new()
+test = CliOutput.new
 
-test.output(json_data)
+test.output(json_data, ARGV)
 
 # Parse.parse_sticker(json_data, "small")
 

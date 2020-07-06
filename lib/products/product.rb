@@ -21,5 +21,9 @@ class Product
         @@availible_options
     end
 
+    def self.clear_options
+        @@availible_options = {}
+    end
+
 end
 
