@@ -2,8 +2,8 @@
 
 ## Table of Contents
 1. Introduction 
-2. Technologies
-3. Testing
+2. Instructions on running the program
+3. Instructions on running the tests locally
 
 Given a JSON file of product data, write a program that takes in a product type and zero or more product options, and returns the remaining product option categories with the available options.
 
