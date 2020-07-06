@@ -1,7 +1,7 @@
 module Parse
 
 # function that parses data for product type sticker and returns the options availbile to standard output
-    def Parse.parse_sticker(data, *option_value)
+    def self.parse_sticker(data, *option_value)
 
         sizes = Set.new(["x-small", "small", "medium", "large","x-large"])
         styles = Set.new(["glossy", "matte"])    
@@ -57,7 +57,7 @@ module Parse
     end
 
 # function that parses data for product type mug and returns the options availbile to standard output
-    def Parse.parse_mugs(data, option_value=nil)
+    def self.parse_mugs(data, option_value=nil)
 
         styles = Set.new(["travel-mug", "coffee-mug"])    
 
@@ -94,7 +94,7 @@ module Parse
     end 
 
 # function that parses data for product type tshirt and returns the options availbile to standard output
-    def Parse.parse_shirts(data, *option_value)
+    def self.parse_shirts(data, *option_value)
 
         gender = Set.new(["female", "male"]) 
         colors = Set.new(["red", "green", "navy", "white", "black"])  

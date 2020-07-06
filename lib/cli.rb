@@ -10,64 +10,48 @@ require 'json'
 json_data_from_file = File.read("products.json")
 json_data = JSON.parse(json_data_from_file)
 
-def output(data)
+class Output
 
-    if ARGV[0] == "tshirt"
+    include Parse
 
-        if ARGV.length > 1 
-            Parse.parse_shirts(data, *ARGV[1..-1])
+    def output(data)
+
+        if ARGV[0] == "tshirt"
+
+            if ARGV.length > 1 
+                Parse.parse_shirts(data, *ARGV[1..-1])
+            else
+                Parse.parse_shirts(data)
+            end
+
+        elsif ARGV[0] == "sticker"
+
+            if ARGV.length > 1 
+                Parse.parse_sticker(data, *ARGV[1..-1])
+            else
+                Parse.parse_sticker(data)
+            end
+
+        elsif ARGV[0] == "mug"
+
+            if ARGV.length > 1 
+                Parse.parse_mugs(data, ARGV[1])
+            else
+                Parse.parse_mugs(data)
+            end
+
         else
-            Parse.parse_shirts(data)
+            puts "please enter: product_type [option1 option2 option3]"
         end
 
-    elsif ARGV[0] == "sticker"
-
-        if ARGV.length > 1 
-            Parse.parse_sticker(data, *ARGV[1..-1])
-        else
-            Parse.parse_sticker(data)
-        end
-
-    elsif ARGV[0] == "mug"
-
-        if ARGV.length > 1 
-            Parse.parse_mugs(data, ARGV[1])
-        else
-            Parse.parse_mugs(data)
-        end
-
-    else
-        puts "please enter: product_type [option1 option2 option3]"
     end
 
 end
 
-output(json_data)
+test = Output.new()
 
-# if ARGV[0] == "tshirt"
+test.output(json_data)
 
-#     if ARGV.length > 1 
-#         Parse.parse_shirts(json_data, *ARGV[1..-1])
-#     else
-#         Parse.parse_shirts(json_data)
-#     end
+# Parse.parse_sticker(json_data, "small")
 
-# elsif ARGV[0] == "sticker"
 
-#     if ARGV.length > 1 
-#         Parse.parse_sticker(json_data, *ARGV[1..-1])
-#     else
-#         Parse.parse_sticker(json_data)
-#     end
-
-# elsif ARGV[0] == "mug"
-
-#     if ARGV.length > 1 
-#         Parse.parse_mugs(json_data, ARGV[1])
-#     else
-#         Parse.parse_mugs(json_data)
-#     end
-
-# else
-#     puts "please enter: product_type [option1 option2 option3]"
-# end
