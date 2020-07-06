@@ -38,16 +38,22 @@ Example: Options for Small Sticker (no Size Option when 'small' is given)
 Style: matte
 
 ## Instructions on running the program
+This program runs on ther terminal, my setup is on mac os
 
 * Make sure to have ruby installed in your setup 
 *  If you don't here is a link with instructions to get ruby: <a href = "https://www.ruby-lang.org/en/documentation/installation/">get Ruby</a>
 * Once you have cloned the git folder:
     * In your terminal cd into the lib folder 
     * run ./cli.rb <product_type> on the terminal
-    * example:
+    * example without options:
         * $ ./cli tshirt 
         * this will output:  
         Gender: male, female  
+        Color: red, blue, green  
+        Size: small, medium, large, extra-large, 2x-large  
+    * example with option, gender:
+        * $ ./cli tshirt female
+        * this will output:  
         Color: red, blue, green  
         Size: small, medium, large, extra-large, 2x-large  
 
