@@ -54,14 +54,13 @@ This program runs on ther terminal, my setup is on mac os
     * In your terminal cd into the lib folder 
     * run ./cli.rb <product_type> [option1 option2 option3] on the terminal
     * example without options:
-       > * $ ./cli.rb tshirt 
-        * this will output:  
+       > $ ./cli.rb tshirt  
         Gender: male, female  
         Color: red, blue, green  
         Size: small, medium, large, extra-large, 2x-large  
     * example with option, gender:
-        > * $ ./cli.rb tshirt female
-        * this will output:  
+        > $ ./cli.rb tshirt female
+        this will output:  
         Color: red, blue, green  
         Size: small, medium, large, extra-large, 2x-large  
 
@@ -73,8 +72,8 @@ to run the tests:
 * run "bundle exec rspec <test file name>.rb"
 * Here is an exmple to run the tshirt class test:
 * example:  
-    > * $ bundle exec rspec t_shirt_spec.rb
-    * outputs:  
+    > $ bundle exec rspec t_shirt_spec.rb
+     
     ......  
     Finished in 0.00725 seconds (files took 0.13828 seconds to load)
     6 examples, 0 failures
